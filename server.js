@@ -54,6 +54,12 @@ app.get('/', (req, res) => {
   })
 })
 
+app.get('/portfolio', (req, res) => {
+  res.render('portfolio.hbs', {
+    pageTitle: 'My portfolio'
+  })
+})
+
 // app.get('/', (req, res) => {
 //   // res.send('<h1>Hello express!</h1>')
 //   res.send({
